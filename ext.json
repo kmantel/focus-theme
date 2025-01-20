@@ -1,0 +1,18 @@
+{
+    "identifier": "org.ten.sn-theme-focus-darker",
+    "name": "Darker",
+    "content_type": "SN|Theme",
+    "area": "themes",
+    "version": "0.0.1",
+    "url": "https://raw.githubusercontent.com/kmantel/focus-theme/refs/heads/main/dist/dist.css",
+    "latest_url": "https://cdn.jsdelivr.net/gh/kmantel/focus-theme@main/ext.json",
+    "download_url": "https://github.com/kmantel/focus-theme/archive/refs/heads/main.zip",
+    "marketing_url": "https://github.com/kmantel/focus-theme",
+    "dock_icon": {
+        "type": "circle",
+        "background_color": "#cc58a0",
+        "foreground_color": "#cc58a0",
+        "border_color": "#cc58a0"
+    },
+    "statusBar": "dark-content"
+}
