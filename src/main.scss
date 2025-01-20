@@ -1,68 +1,105 @@
 :root {
+  --sn-stylekit-neutral-color: #72767e;
+  --sn-stylekit-neutral-contrast-color: #f6f6f6;
+  --sn-stylekit-info-color: #086dd6;
+  --sn-stylekit-info-color-darkened: #065cb5;
+  --sn-stylekit-info-contrast-color: #f6f6f6;
+  --sn-stylekit-info-backdrop-color: #2b6fcf0f;
+  --sn-stylekit-success-color: #007662;
+  --sn-stylekit-success-contrast-color: #f6f6f6;
+  --sn-stylekit-warning-color: #ebad00;
+  --sn-stylekit-warning-contrast-color: #f6f6f6;
+  --sn-stylekit-danger-color: #cc2128;
+  --sn-stylekit-danger-contrast-color: #f6f6f6;
+  --sn-stylekit-danger-light-color: #f9e4e5;
+  --sn-stylekit-shadow-color: #c8c8c8;
+  --sn-stylekit-background-color: #f6f6f6;
+  --sn-stylekit-border-color: #dfe1e4;
+  --sn-stylekit-foreground-color: #19191c;
+  --sn-stylekit-contrast-background-color: rgba(244, 245, 247, 1);
+  --sn-stylekit-contrast-foreground-color: #2e2e2e;
+  --sn-stylekit-contrast-border-color: #e3e3e3;
+  --sn-stylekit-secondary-background-color: #eeeff1;
+  --sn-stylekit-secondary-foreground-color: #2e2e2e;
+  --sn-stylekit-secondary-border-color: #e3e3e3;
+  --sn-stylekit-secondary-contrast-background-color: #e3e3e3;
+  --sn-stylekit-secondary-contrast-foreground-color: #2e2e2e;
+  --sn-stylekit-secondary-contrast-border-color: #a2a2a2;
+  --sn-stylekit-editor-background-color: var(--sn-stylekit-background-color);
+  --sn-stylekit-editor-foreground-color: var(--sn-stylekit-foreground-color);
+  --sn-stylekit-paragraph-text-color: #454545;
+  --sn-stylekit-input-placeholder-color: #a8a8a8;
+  --sn-stylekit-input-border-color: #e3e3e3;
+  --sn-stylekit-scrollbar-thumb-color: #dfdfdf;
+  --sn-stylekit-scrollbar-track-border-color: #e7e7e7;
+  --sn-stylekit-theme-type: light;
+  --sn-stylekit-theme-name: sn-light;
+  --sn-stylekit-passive-color-0: #999999;
+  --sn-stylekit-passive-color-1: #7d727a;
+  --sn-stylekit-passive-color-2: #c4bbc1;
+  --sn-stylekit-passive-color-3: #2b282a;
+  --sn-stylekit-passive-color-4: #1e1c1d;
+  --sn-stylekit-passive-color-4-opacity-variant: #c4bbc13d;
+  --sn-stylekit-passive-color-5: #1f1c1f;
+  --sn-stylekit-passive-color-6: #e4e4e4;
+  --sn-stylekit-passive-color-super-light: #f8f8f8;
+  --sn-stylekit-accessory-tint-color-1: #086dd6;
+  --sn-stylekit-accessory-tint-color-2: #ea6595;
+  --sn-stylekit-accessory-tint-color-3: #ebad00;
+  --sn-stylekit-accessory-tint-color-4: #7049cf;
+  --sn-stylekit-accessory-tint-color-5: #1aa772;
+  --sn-stylekit-accessory-tint-color-6: #f28c52;
+}
 
-  --foreground-color: #eeeeee;
-  --background-color: #0f1011;
-  --highlight-color: #a464c2;
-  --border-color: #0f1011;
-
+:root {
+  --foreground-color: #d4d4d4;
+  --background-color: #0d090c;
+  --highlight-color: #cc58a0;
+  --border-color: #261a23;
   --sn-component-foreground-color: var(--foreground-color);
   --sn-component-background-color: transparent;
   --sn-component-foreground-highlight-color: var(--highlight-color);
   --sn-component-outer-border-color: transparent;
   --sn-component-inner-border-color: var(--foreground-color);
-
-  // StyleKit Vars
-
   --sn-stylekit-shadow-color: #000000;
-
   --sn-stylekit-info-color: var(--highlight-color);
   --sn-stylekit-info-contrast-color: var(--foreground-color);
-
   --sn-stylekit-neutral-color: #7c7c7c;
-  --sn-stylekit-neutral-contrast-color: #ffffff;
-
-  --sn-stylekit-success-color: #2B9612;
-  --sn-stylekit-success-contrast-color: #ffffff;
-
-  --sn-stylekit-warning-color: #f6a200;
-  --sn-stylekit-warning-contrast-color: #ffffff;
-
-  --sn-stylekit-danger-color: #F80324;
-  --sn-stylekit-danger-contrast-color: #ffffff;
-
+  --sn-stylekit-neutral-contrast-color: #f6f6f6;
+  --sn-stylekit-success-color: #2b9612;
+  --sn-stylekit-success-contrast-color: #f6f6f6;
+  --sn-stylekit-warning-color: #cc8800;
+  --sn-stylekit-warning-contrast-color: #f6f6f6;
+  --sn-stylekit-danger-color: #f80324;
+  --sn-stylekit-danger-contrast-color: #f6f6f6;
   --sn-stylekit-editor-background-color: var(--sn-stylekit-background-color);
   --sn-stylekit-editor-foreground-color: var(--sn-stylekit-foreground-color);
-
   --sn-stylekit-background-color: var(--background-color);
   --sn-stylekit-foreground-color: var(--foreground-color);
-  --sn-stylekit-border-color: #000000;
-
-  --sn-stylekit-contrast-background-color: #000000;
-  --sn-stylekit-contrast-foreground-color: #ffffff;
+  --sn-stylekit-border-color: #181a1b;
+  --sn-stylekit-contrast-background-color: #1a1218;
+  --sn-stylekit-contrast-foreground-color: #f6f6f6;
   --sn-stylekit-contrast-border-color: #000000;
-
-  --sn-stylekit-secondary-background-color: #0f1011;
-  --sn-stylekit-secondary-foreground-color: #ffffff;
+  --sn-stylekit-secondary-background-color: var(--sn-stylekit-passive-color-4);
+  --sn-stylekit-secondary-foreground-color: #f6f6f6;
   --sn-stylekit-secondary-border-color: #000000;
-
   --sn-stylekit-secondary-contrast-background-color: #000000;
-  --sn-stylekit-secondary-contrast-foreground-color: #ffffff;
-  --sn-stylekit-secondary-contrast-border-color: #ffffff;
-
-  --sn-stylekit-paragraph-text-color: #ffffff;
-
+  --sn-stylekit-secondary-contrast-foreground-color: #f6f6f6;
+  --sn-stylekit-secondary-contrast-border-color: #f6f6f6;
+  --sn-stylekit-paragraph-text-color: #f6f6f6;
   --sn-desktop-titlebar-bg-color: var(--background-color);
   --sn-desktop-titlebar-border-color: var(--border-color);
   --sn-desktop-titlebar-ui-color: var(--foreground-color);
   --sn-desktop-titlebar-ui-hover-color: var(--highlight-color);
-
   --sn-stylekit-scrollbar-track-border-color: var(--border-color);
   --sn-stylekit-scrollbar-thumb-color: var(--sn-stylekit-info-color);
-
   --sn-stylekit-menu-border: 1px solid #424242;
+  --navigation-item-selected-background-color: var(--background-color);
+  --normal-button-background-color: var(--sn-stylekit-passive-color-5);
+  --popover-border-color: var(--sn-stylekit-passive-color-3);
+  --separator-color: var(--sn-stylekit-passive-color-3);
+}
 
-  --sn-stylekit-passive-color-0: #999999;
-  --sn-stylekit-passive-color-3: #28292b;
-  --sn-stylekit-passive-color-4: #1c1d1e;
-  --sn-stylekit-passive-color-5: #1d1f20;
+.translucent-ui [role="dialog"] {
+  --sn-stylekit-border-color: var(--sn-stylekit-passive-color-3);
 }
