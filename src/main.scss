@@ -53,18 +53,18 @@
 
 :root {
   --foreground-color: #d4d4d4;
-  --background-color: #0d090c;
+  --background-color: #000000;
   --highlight-color: #cc58a0;
   --highlight-contrast-color: #e6dd6a;
 
   --border-color: #261a23;
 
-  --background-color-1: #130d12;
-  --background-color-2: #1a1218;
+  --background-color-1: #0d090c;
+  --background-color-2: #130d12;
   --background-color-3: #261a23;
 
-  --background-hover-color: var(--background-color-3);
-  --background-selection-contrast-color: #995a8a4d;
+  --background-hover-color: var(--background-color-1);
+  --background-selection-contrast-color: var(--background-color-2);
 
   --sn-component-foreground-color: var(--foreground-color);
   --sn-component-background-color: transparent;
@@ -87,7 +87,7 @@
   --sn-stylekit-background-color: var(--background-color);
   --sn-stylekit-foreground-color: var(--foreground-color);
   --sn-stylekit-border-color: #1b181a;
-  --sn-stylekit-contrast-background-color: var(--background-color-2);
+  --sn-stylekit-contrast-background-color: var(--background-color-1);
   --sn-stylekit-contrast-foreground-color: #f6f6f6;
   --sn-stylekit-contrast-border-color: #000000;
   --sn-stylekit-secondary-background-color: var(--background-color-1);
@@ -185,4 +185,8 @@ div[id="portal/:rb:"] .mb-3
 
 #items-column .content-list-item.selected {
   background-color: var(--item-cell-selected-background-color);
+}
+
+#footer-bar {
+  background-color: var(--background-color);
 }
