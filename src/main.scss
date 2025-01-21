@@ -109,3 +109,12 @@
 .translucent-ui [role="dialog"] {
   --sn-stylekit-border-color: var(--sn-stylekit-passive-color-3);
 }
+
+.text-text {
+  color: var(--foreground-color);
+}
+
+#navigation .group:hover.tag > .tag-info > .title,
+#navigation .group:hover.root-drop > .tag-info > .title {
+  color: var(--sn-stylekit-contrast-foreground-color);
+}
