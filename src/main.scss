@@ -53,7 +53,7 @@
 
 :root {
   --foreground-color: #d4d4d4;
-  --background-color: #0d090c;
+  --background-color: #000000;
   --highlight-color: #cc58a0;
   --border-color: #261a23;
   --sn-component-foreground-color: var(--foreground-color);
@@ -77,7 +77,7 @@
   --sn-stylekit-background-color: var(--background-color);
   --sn-stylekit-foreground-color: var(--foreground-color);
   --sn-stylekit-border-color: #1b181a;
-  --sn-stylekit-contrast-background-color: #1a1218;
+  --sn-stylekit-contrast-background-color: #0d090c;
   --sn-stylekit-contrast-foreground-color: #f6f6f6;
   --sn-stylekit-contrast-border-color: #000000;
   --sn-stylekit-secondary-background-color: var(--sn-stylekit-passive-color-4);
@@ -94,7 +94,7 @@
   --sn-stylekit-scrollbar-track-border-color: var(--border-color);
   --sn-stylekit-scrollbar-thumb-color: var(--sn-stylekit-info-color);
   --sn-stylekit-menu-border: 1px solid #424242;
-  --navigation-item-selected-background-color: var(--background-color);
+  --navigation-item-selected-background-color: var(--sn-stylekit-contrast-background-color);
   --normal-button-background-color: var(--sn-stylekit-passive-color-5);
   --popover-border-color: var(--sn-stylekit-passive-color-3);
   --separator-color: var(--sn-stylekit-passive-color-3);
@@ -119,4 +119,8 @@
 #navigation .group:hover.tag > .tag-info > .title,
 #navigation .group:hover.root-drop > .tag-info > .title {
   color: var(--sn-stylekit-contrast-foreground-color);
+}
+
+#footer-bar {
+  background-color: var(--background-color);
 }
