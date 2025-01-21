@@ -98,6 +98,12 @@
   --normal-button-background-color: var(--sn-stylekit-passive-color-5);
   --popover-border-color: var(--sn-stylekit-passive-color-3);
   --separator-color: var(--sn-stylekit-passive-color-3);
+
+  --text-selection-background-color: color-mix(
+    in srgb,
+    var(--highlight-color),
+    transparent 50%
+  ) !important;
 }
 
 .translucent-ui [role="dialog"] {
