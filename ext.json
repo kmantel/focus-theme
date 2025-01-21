@@ -1,12 +1,12 @@
 {
-    "identifier": "org.ten.sn-theme-focus-warm",
-    "name": "Focus Warm",
+    "identifier": "org.ten.sn-theme-focus-warm-oled",
+    "name": "Focus Warm OLED",
     "content_type": "SN|Theme",
     "area": "themes",
     "version": "0.0.1",
-    "url": "https://raw.githubusercontent.com/kmantel/focus-theme/refs/heads/main/dist/dist.css",
-    "latest_url": "https://cdn.jsdelivr.net/gh/kmantel/focus-theme@main/ext.json",
-    "download_url": "https://github.com/kmantel/focus-theme/archive/refs/heads/main.zip",
+    "url": "https://raw.githubusercontent.com/kmantel/focus-theme/refs/heads/oled/dist/dist.css",
+    "latest_url": "https://cdn.jsdelivr.net/gh/kmantel/focus-theme@oled/ext.json",
+    "download_url": "https://github.com/kmantel/focus-theme/archive/refs/heads/oled.zip",
     "marketing_url": "https://github.com/kmantel/focus-theme",
     "dock_icon": {
         "type": "circle",

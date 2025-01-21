@@ -104,6 +104,8 @@
     var(--highlight-color),
     transparent 50%
   ) !important;
+
+  --navigation-column-background-color: var(--background-color);
 }
 
 .translucent-ui [role="dialog"] {
