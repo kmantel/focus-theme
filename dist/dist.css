@@ -56,6 +56,9 @@
   --background-color: #0d090c;
   --highlight-color: #cc58a0;
   --border-color: #261a23;
+  --background-color-1: #130d12;
+  --background-color-2: #1a1218;
+  --background-color-3: #261a23;
   --sn-component-foreground-color: var(--foreground-color);
   --sn-component-background-color: transparent;
   --sn-component-foreground-highlight-color: var(--highlight-color);
@@ -77,10 +80,10 @@
   --sn-stylekit-background-color: var(--background-color);
   --sn-stylekit-foreground-color: var(--foreground-color);
   --sn-stylekit-border-color: #1b181a;
-  --sn-stylekit-contrast-background-color: #1a1218;
+  --sn-stylekit-contrast-background-color: var(--background-color-2);
   --sn-stylekit-contrast-foreground-color: #f6f6f6;
   --sn-stylekit-contrast-border-color: #000000;
-  --sn-stylekit-secondary-background-color: var(--sn-stylekit-passive-color-4);
+  --sn-stylekit-secondary-background-color: var(--background-color-1);
   --sn-stylekit-secondary-foreground-color: #f6f6f6;
   --sn-stylekit-secondary-border-color: #000000;
   --sn-stylekit-secondary-contrast-background-color: #000000;
@@ -94,10 +97,13 @@
   --sn-stylekit-scrollbar-track-border-color: var(--border-color);
   --sn-stylekit-scrollbar-thumb-color: var(--sn-stylekit-info-color);
   --sn-stylekit-menu-border: 1px solid #424242;
-  --navigation-item-selected-background-color: var(--background-color);
+  --navigation-column-background-color: var(--background-color-2);
+  --navigation-item-selected-background-color: var(--sn-stylekit-contrast-background-color);
   --normal-button-background-color: var(--sn-stylekit-passive-color-5);
   --popover-border-color: var(--sn-stylekit-passive-color-3);
   --separator-color: var(--sn-stylekit-passive-color-3);
+  --items-column-background-color: var(--background-color-1);
+  --items-column-items-background-color: var(--background-color-1);
   --text-selection-background-color: color-mix(
     in srgb,
     var(--highlight-color),
@@ -105,7 +111,7 @@
   ) !important;
 }
 
-.translucent-ui [role="dialog"] {
+.translucent-ui [role=dialog] {
   --sn-stylekit-border-color: var(--sn-stylekit-passive-color-3);
 }
 
@@ -116,6 +122,15 @@
 #navigation .group:hover.tag > .tag-info > .title,
 #navigation .group:hover.root-drop > .tag-info > .title {
   color: var(--sn-stylekit-contrast-foreground-color);
+}
+
+div:has(.preferences-menu-item),
+div[id="portal/:rb:"] .mb-3 {
+  background-color: var(--sn-stylekit-secondary-background-color);
+}
+
+.preferences-menu-item:hover {
+  background-color: var(--sn-stylekit-contrast-background-color);
 }
 
 /*# sourceMappingURL=dist.css.map */
