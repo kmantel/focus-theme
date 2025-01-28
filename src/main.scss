@@ -61,6 +61,9 @@
   --background-color-2: #1a1218;
   --background-color-3: #261a23;
 
+  --background-hover-color: var(--background-color-3);
+  --background-selection-contrast-color: #995a8a4d;
+
   --sn-component-foreground-color: var(--foreground-color);
   --sn-component-background-color: transparent;
   --sn-component-foreground-highlight-color: var(--highlight-color);
@@ -100,15 +103,19 @@
   --sn-stylekit-scrollbar-thumb-color: var(--sn-stylekit-info-color);
   --sn-stylekit-menu-border: 1px solid #424242;
 
-  --navigation-column-background-color: var(--background-color-2);
-  --navigation-item-selected-background-color: var(--sn-stylekit-contrast-background-color);
-
   --normal-button-background-color: var(--sn-stylekit-passive-color-5);
   --popover-border-color: var(--sn-stylekit-passive-color-3);
   --separator-color: var(--sn-stylekit-passive-color-3);
 
   --items-column-background-color: var(--background-color-1);
   --items-column-items-background-color: var(--background-color-1);
+  --item-cell-selected-background-color: var(--background-selection-contrast-color);
+
+  --navigation-column-background-color: var(--items-column-background-color);
+  --navigation-item-selected-background-color: var(--background-selection-contrast-color);
+  --navigation-item-text-color: var(--foreground-color);
+
+  --preferences-background-color: var(--background-color);
 
   --text-selection-background-color: color-mix(
     in srgb,
@@ -126,10 +133,16 @@
 }
 
 
-
 #navigation .group:hover.tag > .tag-info > .title,
 #navigation .group:hover.root-drop > .tag-info > .title {
   color: var(--sn-stylekit-contrast-foreground-color);
+  -webkit-text-fill-color: var(--sn-stylekit-contrast-foreground-color);
+}
+
+
+#navigation .tag:hover:not(.selected),
+#navigation .root-drop:hover:not(.selected) {
+  background-color: var(--background-hover-color);
 }
 
 div:has(.preferences-menu-item),
@@ -139,5 +152,15 @@ div[id="portal/:rb:"] .mb-3
 }
 
 .preferences-menu-item:hover {
-    background-color: var(--sn-stylekit-contrast-background-color);
+    background-color: var(--background-hover-color);
+}
+
+@media screen and (hover: hover) {
+  #items-column .content-list-item:hover {
+    background-color: var(--background-hover-color);
+  }
+}
+
+#items-column .content-list-item.selected {
+  background-color: var(--item-cell-selected-background-color);
 }
