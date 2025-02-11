@@ -55,6 +55,8 @@
   --foreground-color: #d4d4d4;
   --background-color: #0d090c;
   --highlight-color: #cc58a0;
+  --highlight-contrast-color: #e6dd6a;
+
   --border-color: #261a23;
 
   --background-color-1: #130d12;
@@ -122,6 +124,26 @@
     var(--highlight-color),
     transparent 50%
   ) !important;
+
+  --easymd-find-result-base-background: var(--highlight-contrast-color);
+  --easymd-find-result-background: color-mix(
+    in srgb,
+    color-mix(
+        in srgb,
+        var(--easymd-find-result-base-background) 35%,
+        var(--highlight-color)
+      )
+      80%,
+    transparent
+  );
+  --easymd-find-result-foreground: var(--background-color);
+
+  --easymd-find-result-selected-background: color-mix(
+    in srgb,
+    var(--easymd-find-result-selected-base-background) 90%,
+    var(--highlight-color)
+  );
+  --easymd-find-result-selected-foreground: var(--background-color);
 }
 
 .translucent-ui [role="dialog"] {
